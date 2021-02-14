@@ -1,13 +1,67 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #f4f4f4;
+}
+
+.score-text {
+  margin: 25px 10%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.regular-text {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.restart-button {
+  position: relative;
+  top: 100px;
+  align-items: center;
+}
+
+#Rock,
+#Paper,
+#Scissor {
+  color: #f4f4f4;
+}
+
+#Rock:hover,
+#Paper:hover,
+#Scissor:hover {
+  color: gray;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.social {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.social:hover {
+  color: gray;
 }
